@@ -40,7 +40,11 @@
       // Event handlers
       $this.on('jqprReceived', function(data) {
         pullRequests = data.pullRequests;
-        $this.text(pullRequests.length);
+        $this.html(
+          '<a href="' + 'http://www.github.com/' + user + '/' + repo + '/pulls' + '">' +
+            pullRequests.length +
+          '</a>'
+        );
       });
       $this.on('jqprError', function() {
         $this.text('Sorry, your repository could not be found.');

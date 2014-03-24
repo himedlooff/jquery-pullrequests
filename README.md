@@ -33,7 +33,9 @@ The above will be converted to:
 <ul>
   <li>
   	Open pull requests for himedlooff/jquery-pullrequests-test-repo: 
-  	<span class="jqpr" data-user="himedlooff" data-repo="jquery-pullrequests-test-repo">1</span>
+  	<span class="jqpr" data-user="himedlooff" data-repo="jquery-pullrequests-test-repo">
+  		<a href="http://www.github.com/himedlooff/jquery-pullrequests-test-repo/pulls">1</a>
+  	</span>
   </li>
 </ul>
 ```

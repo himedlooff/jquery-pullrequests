@@ -84,6 +84,21 @@
     });
   });
 
+  asyncTest('adds link to pull requests page', function() {
+    expect(1);
+    var myElems = this.elems.filter('[data-user="himedlooff"][data-repo="jquery-pullrequests-test-repo"]');
+    myElems.pullrequests().on('jqprReceived', function(){
+      equal(
+        myElems.html(),
+        // The number here might need to change depending on how many pull
+        // requests are open on this repo at the time of running this test.
+        '<a href="http://www.github.com/himedlooff/jquery-pullrequests-test-repo/pulls">1</a>',
+        'should contain an anchor element linking to the specified repository'
+      );
+      start();
+    });
+  });
+
   // module('jQuery.pullrequests');
 
   // test('is awesome', function() {
