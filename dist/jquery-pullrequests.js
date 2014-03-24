@@ -1,4 +1,4 @@
-/*! jQuery Pullrequests - v0.1.0 - 2014-03-24
+/*! jQuery Pullrequests - v0.1.1 - 2014-03-24
 * https://github.com/himedlooff/jquery-pullrequests
 * Copyright (c) 2014 Mike Morici; Licensed MIT */
 (function($) {
@@ -35,7 +35,11 @@
       // Event handlers
       $this.on('jqprReceived', function(data) {
         pullRequests = data.pullRequests;
-        $this.text(pullRequests.length);
+        $this.html(
+          '<a href="' + 'http://www.github.com/' + user + '/' + repo + '/pulls' + '">' +
+            pullRequests.length +
+          '</a>'
+        );
       });
       $this.on('jqprError', function() {
         $this.text('Sorry, your repository could not be found.');

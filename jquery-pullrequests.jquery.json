@@ -2,7 +2,7 @@
   "name": "jquery-pullrequests",
   "title": "jQuery Pullrequests",
   "description": "A jQuery plugin that checks for pull requests.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/himedlooff/jquery-pullrequests",
   "author": {
     "name": "Mike Morici",
