@@ -76,7 +76,8 @@
     myElems.pullrequests().on('jqprReceived', function(){
       equal(
         myElems.text(),
-        // The number here might need to change depending on how many pull requests are open o this repo at the time of running this test.
+        // The number here might need to change depending on how many pull
+        // requests are open on this repo at the time of running this test.
         '1',
         'should contain the number of pull requests open on the specified repository'
       );
