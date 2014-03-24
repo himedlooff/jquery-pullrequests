@@ -35,7 +35,7 @@
       // Event handlers
       $this.on('jqprReceived', function(data) {
         pullRequests = data.pullRequests;
-        $this.text('Number of pull requests open: ' + pullRequests.length);
+        $this.text(pullRequests.length);
       });
       $this.on('jqprError', function() {
         $this.text('Sorry, your repository could not be found.');
