@@ -72,11 +72,12 @@
 
   asyncTest('adds "number of repos" message', function() {
     expect(1);
-    var myElems = this.elems.filter('[data-user="himedlooff"][data-repo="jquery-pullrequests"]');
+    var myElems = this.elems.filter('[data-user="himedlooff"][data-repo="jquery-pullrequests-test-repo"]');
     myElems.pullrequests().on('jqprReceived', function(){
       equal(
         myElems.text(),
-        'Number of pull requests open: 0',
+        // The number here might need to change depending on how many pull requests are open o this repo at the time of running this test.
+        'Number of pull requests open: 1',
         'should contain a "number of repos" message'
       );
       start();

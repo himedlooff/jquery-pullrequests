@@ -12,7 +12,7 @@ In your web page:
 
 ```html
 <ul>
-  <li data-user="himedlooff" data-repo="jquery-pullrequests"></li>
+  <li data-user="himedlooff" data-repo="jquery-pullrequests-test-repo"></li>
 </ul>
 
 <script src="jquery.js"></script>
@@ -28,8 +28,8 @@ The above will be converted to:
 
 ```html
 <ul>
-  <li class="jqpr" data-user="himedlooff" data-repo="jquery-pullrequests">
-  	Number of pull requests open: 0
+  <li class="jqpr" data-user="himedlooff" data-repo="jquery-pullrequests-test-repo">
+  	Number of pull requests open: 1
   </li>
 </ul>
 ```
